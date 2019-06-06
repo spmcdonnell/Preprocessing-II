@@ -209,16 +209,38 @@ nav ul li {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -228,13 +250,28 @@ nav ul li {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: 1;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -245,9 +282,25 @@ nav ul li {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 85%;
+    margin: 0 auto 30px;
+  }
+}
+.home .content-pick .destination .btn {
+  max-width: initial;
 }
 .home .banner-content {
   margin-top: 0;
@@ -270,11 +323,18 @@ header {
   border-bottom: 2px dashed #c0c0c0;
 }
 header .wrap {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
