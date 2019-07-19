@@ -1,1 +1,16 @@
 // Mixins in here
+.flex(@direction: row, @justify: space-between) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+}
+
+.rounded-button(@button-bg-color: #008080, @button-color: #fff) {
+  background-color: @button-bg-color;
+  color: @button-color;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 14px 10px;
+  border-radius: 15px;
+  max-width: 200px;
+}
